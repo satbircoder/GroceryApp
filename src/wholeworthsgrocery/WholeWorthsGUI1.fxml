@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wholeworthsgrocery.GroceryController">
+   <children>
+      <ImageView fitHeight="370.0" fitWidth="442.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:classes/wholeworthsgrocery/milk-eggs-bread.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="124.0" layoutY="14.0" prefHeight="20.0" prefWidth="194.0" text="Wholeworths Grocery Items:" textAlignment="CENTER" textFill="#ab0c0c">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="44.0" prefHeight="20.0" prefWidth="39.0" text="Eggs:" textFill="#f8f3f3">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="64.0" prefHeight="20.0" prefWidth="39.0" text="QTY:" textFill="#1e1c1c">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="eggQty" layoutX="53.0" layoutY="62.0" prefHeight="25.0" prefWidth="109.0" />
+      <Label layoutX="14.0" layoutY="111.0" prefHeight="20.0" prefWidth="39.0" text="Milk:" textFill="#f8f3f3">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="131.0" prefHeight="20.0" prefWidth="39.0" text="QTY:" textFill="#1e1c1c">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="milkQty" layoutX="53.0" layoutY="128.0" prefHeight="25.0" prefWidth="109.0" />
+      <Label layoutX="8.0" layoutY="172.0" prefHeight="20.0" prefWidth="45.0" text="Bread:" textFill="#f8f3f3">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="192.0" prefHeight="20.0" prefWidth="39.0" text="QTY:" textFill="#1e1c1c">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="breadQty" layoutX="53.0" layoutY="190.0" prefHeight="25.0" prefWidth="109.0" />
+      <Label layoutX="202.0" layoutY="64.0" prefHeight="20.0" prefWidth="94.0" text="Subtotal Eggs:" textFill="#1e1c1c">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="131.0" prefHeight="20.0" prefWidth="94.0" text="Subtotal Milk:" textFill="#1e1c1c">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="192.0" prefHeight="20.0" prefWidth="103.0" text="Subtotal Bread:" textFill="#1e1c1c">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="balanceTotal" editable="false" layoutX="304.0" layoutY="281.0" prefHeight="25.0" prefWidth="109.0" />
+      <TextField fx:id="breadTotal" editable="false" layoutX="304.0" layoutY="190.0" prefHeight="25.0" prefWidth="109.0" />
+      <TextField fx:id="milkTotal" editable="false" layoutX="304.0" layoutY="128.0" prefHeight="25.0" prefWidth="109.0" />
+      <TextField fx:id="eggsTotal" editable="false" layoutX="304.0" layoutY="62.0" prefHeight="25.0" prefWidth="109.0" />
+      <Label layoutX="177.0" layoutY="284.0" prefHeight="20.0" prefWidth="126.0" text="Total Amount Due:" textFill="#f8f3f3">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="calculator" layoutX="174.0" layoutY="236.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="33.0" prefWidth="94.0" text="Calculate" />
+     <Button fx:id="payOption" layoutX="317" layoutY="310" mnemonicParsing="false" onAction="#handlePayAction" prefHeight="33.0" prefWidth="94.0" text="Pay" />
+      <TextField fx:id="messageBox" alignment="TOP_LEFT" editable="false" layoutX="14.0" layoutY="310" prefHeight="33.0" prefWidth="300" promptText="Message" />
+   </children>
+</Pane>
